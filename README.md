@@ -21,6 +21,8 @@ Before you begin, ensure you have the following:
 |- variables.tf
 |- vpc.tf
 |- ec2.tf
+|- outputs.tf
+|- security-groups.tf
 ```
 ---
 ## Getting Started
@@ -32,7 +34,7 @@ Before you begin, ensure you have the following:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd tf-private-apigw
+   cd tf-vpc-flow-logs
    ```
 3. Initialize Terraform:
    ```bash
@@ -63,10 +65,7 @@ Remove all resources created by Terraform.
 ---
 
 <!-- ## Tutorials
-[Private Serverless REST API with API Gateway: Lambda, DynamoDB, VPC Endpoints & Terraform - Part 1](https://www.serverlessguru.com/blog/private-serverless-rest-api-with-api-gateway-lambda-dynamodb-vpc-endpoints-terraform---part-1)
-
-[Private Serverless REST API with API Gateway: Lambda, DynamoDB, VPC Endpoints & Terraform - Part 2](https://www.serverlessguru.com/blog/private-serverless-rest-api-with-api-gateway-lambda-dynamodb-vpc-endpoints-terraform---part-2) -->
-
+[Private Serverless REST API with API Gateway: Lambda, DynamoDB, VPC Endpoints & Terraform - Part 1](https://www.serverlessguru.com/blog/private-serverless-rest-api-with-api-gateway-lambda-dynamodb-vpc-endpoints-terraform---part-1) -->
 
 ## License
 

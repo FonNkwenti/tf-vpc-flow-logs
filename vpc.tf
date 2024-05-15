@@ -4,6 +4,8 @@ resource "aws_vpc" "this" {
   enable_dns_support   = true
   tags = {
     Name = "flow-logs-vpc"
+    Env = var.tag_environment
+    Project = var.tag_project
   }
 
 }
