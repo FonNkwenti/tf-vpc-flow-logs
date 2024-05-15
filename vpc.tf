@@ -30,6 +30,8 @@ resource "aws_internet_gateway" "this" {
 
   tags = {
     Name = "flow_logs_igw"
+    Env = var.tag_environment
+    Project = var.tag_project
   }
 }
 
@@ -43,6 +45,8 @@ resource "aws_route_table" "flow_logs_pub_rt_az1" {
 
   tags = {
     Name = "flow-logs-pub-rt-az1"
+    Env = var.tag_environment
+    Project = var.tag_project
   }
 }
 
@@ -62,6 +66,8 @@ resource "aws_flow_log" "vpc_flow_logs" {
   log_format                = "$${version} $${account-id} $${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport} $${protocol} $${packets} $${bytes} $${start} $${end} $${action} $${log-status}"
   tags = {
     Name = "vpc-flow-logs"
+    Env = var.tag_environment
+    Project = var.tag_project
   }
 
 }

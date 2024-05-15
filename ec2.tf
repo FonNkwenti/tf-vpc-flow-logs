@@ -51,5 +51,7 @@ resource "aws_instance" "vpc_flow_logs_instance" {
 
   tags = {
     Name = "vpc-flow-log-instance"
+    Env = var.tag_environment
+    Project = var.tag_project
   }
 }

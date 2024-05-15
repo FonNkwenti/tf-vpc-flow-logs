@@ -52,7 +52,7 @@ Before you begin, ensure you have the following:
    ```bash
    terraform apply
    ```
-7. After the apply is complete, Terraform will output the API Gateway URL which can be used to access the REST API endpoints.
+7. After the apply is complete, Terraform will output EC2 instance's DNS name so you can use to test traffic in and out of the VPC.
 
 ---
 
